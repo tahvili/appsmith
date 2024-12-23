@@ -1,0 +1,2 @@
+INSERT INTO form (name, status, json, created, updated)
+VALUES ({{this.params.name}}, {{this.params.status}}, {{this.params.json}}, NOW(), NOW());

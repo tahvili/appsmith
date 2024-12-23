@@ -1,0 +1,3 @@
+SELECT * 
+FROM application 
+WHERE user_id = {{this.params.user_id}};

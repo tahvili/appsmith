@@ -1,0 +1,14 @@
+CREATE TABLE email_templates (
+    id SERIAL PRIMARY KEY,                        -- Unique ID for each email template
+    email_title VARCHAR(255) NOT NULL,           -- Internal title of the email template
+    email_subject VARCHAR(255) NOT NULL,         -- Subject line of the email
+    email_body TEXT NOT NULL,                    -- Body of the email
+    to_list TEXT,                                -- Comma-separated list of direct recipient email addresses
+    cc_list TEXT,                                -- Comma-separated list of email addresses to CC
+    bcc_list TEXT,                               -- Comma-separated list of email addresses to BCC
+    associated_application_id INT,              -- Optional association with a specific application
+    creator_id INT NOT NULL,                     -- ID of the user who created the template
+    created TIMESTAMP DEFAULT NOW(),          -- Timestamp for when the template is created
+    updated TIMESTAMP DEFAULT NOW() ON UPDATE NOW(), -- Auto-update timestamp for last modification
+    FOREIGN KEY (creator_id) REFERENCES client(id) -- Links to the client table
+);

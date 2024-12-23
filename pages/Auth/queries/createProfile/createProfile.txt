@@ -1,0 +1,2 @@
+INSERT INTO profile (owner, first_name, last_name, auth_token, created)
+VALUES ({{ this.params.id }}, {{input_register_firstname.text}}, {{input_register_lastname.text}}, {{this.params.authToken}}, NOW());

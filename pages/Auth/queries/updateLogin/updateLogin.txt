@@ -1,0 +1,3 @@
+UPDATE client
+  SET last_login = NOW()
+  WHERE id = {{ this.params.id }};

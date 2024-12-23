@@ -1,0 +1,19 @@
+INSERT INTO email_templates (
+    email_title,
+    email_subject,
+    email_body,
+    to_list,
+    cc_list,
+    bcc_list,
+    associated_application_id,
+    creator_id
+) VALUES (
+    'Welcome Email',                           -- email_title
+    'Welcome to Our Startup Incubator!',      -- email_subject
+    'Hello %A%,\n\nThank you for joining us. We are excited to have you and your company %B%!', -- email_body
+    'recipient1@example.com,recipient2@example.com', -- to_list
+    'cc_recipient@example.com',               -- cc_list
+    'bcc_recipient@example.com',              -- bcc_list
+    NULL,                                     -- associated_application_id (no application associated)
+    6                                         -- creator_id
+);

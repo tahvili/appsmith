@@ -1,0 +1,2 @@
+INSERT INTO client (email, password, created)
+VALUES ({{input_register_email.text}}, {{this.params.passwordHash}}, NOW());

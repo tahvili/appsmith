@@ -1,0 +1,8 @@
+UPDATE application 
+SET 
+  answers_json = {{this.params.answers_json}},
+	status = {{this.params.status}},
+  updated = NOW()
+WHERE 
+  id = {{this.params.application_id}} AND 
+  status = 'draft';

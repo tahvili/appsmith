@@ -1,0 +1,4 @@
+DELETE FROM application 
+WHERE 
+  id = {{this.params.submission_id}} AND 
+  status IN ('draft', 'pending');

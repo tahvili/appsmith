@@ -1,0 +1,8 @@
+UPDATE form
+SET 
+    name = {{this.params.name}}, 
+    status = {{this.params.status}}, 
+    json = {{this.params.json}}, 
+    updated = NOW()
+WHERE 
+    id = {{this.params.id}};

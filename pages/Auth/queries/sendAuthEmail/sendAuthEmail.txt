@@ -1,0 +1,9 @@
+Dear User,
+
+Thank you for signing up on our platform! To confirm your email address and complete your registration, please click the link below:
+
+<a href="{{ appsmith.URL.fullPath.split('?')[0] }}/?verify={{this.params.authToken}}">CONFIRM MY EMAIL</a>
+
+If you did not sign up, you can safely ignore this email. Your data will be automatically removed from our system.
+
+Thank you

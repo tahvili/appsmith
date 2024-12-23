@@ -1,0 +1,3 @@
+UPDATE profile
+SET verified_at = NOW(), auth_token = NULL
+WHERE id = {{ this.params.id }};

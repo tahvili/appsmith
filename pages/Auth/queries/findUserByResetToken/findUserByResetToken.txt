@@ -1,0 +1,1 @@
+SELECT * FROM profile WHERE password_reset_token = {{this.params.token}};

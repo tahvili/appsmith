@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6748a6862b05bf331ce35ac0_bd6a8aa7-fd12-481c-8f77-a0ebe275560a",
+  "id": "Application_application_function",
+  "unpublishedCollection": {
+    "name": "application_function",
+    "pageId": "Application",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Applications'"
+      }
+    ]
+  }
+}

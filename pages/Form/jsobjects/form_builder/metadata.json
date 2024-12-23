@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6748a6862b05bf331ce35ac0_34ccc340-0dd8-4dd5-a66d-23b86f5d7e33",
+  "id": "Form_form_builder",
+  "unpublishedCollection": {
+    "name": "form_builder",
+    "pageId": "Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Forms'"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+INSERT INTO application (form_id, user_id, created_at, answers_json, status)
+VALUES (
+  {{this.params.form_id}}, 
+  {{this.params.user_id}}, 
+  NOW(), 
+  {{this.params.answers_json}}, 
+  {{this.params.status}}
+);

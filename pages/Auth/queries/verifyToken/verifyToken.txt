@@ -1,0 +1,3 @@
+SELECT * FROM profile
+WHERE auth_token = {{ this.params.token }}
+LIMIT 1;
